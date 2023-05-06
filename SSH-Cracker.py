@@ -47,7 +47,10 @@ def main():
     if os.name == 'nt':
         colorama.just_fix_windows_console()
     print(colorama.Fore.RED)
-    fig = pyfiglet.Figlet(font='doom', width=100)
+    try:
+        fig = pyfiglet.Figlet(font='doom', width=100)
+    except pyfiglet.FontNotFound:
+        fig = pyfiglet.Figlet(width=100)
     print(fig.renderText('<*> BRUTUS <*>'))
     #Argument parser
     prsr = argparse.ArgumentParser(description="SSH Bruteforcer by Barış Akyıldız",
