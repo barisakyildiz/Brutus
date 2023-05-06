@@ -44,7 +44,8 @@ class ProcessEngine(object):
             pass
 
 def main():
-    colorama.just_fix_windows_console()
+    if os.name == 'nt':
+        colorama.just_fix_windows_console()
     print(colorama.Fore.RED)
     fig = pyfiglet.Figlet(font='doom', width=100)
     print(fig.renderText('<*> BRUTUS <*>'))
