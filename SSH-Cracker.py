@@ -29,7 +29,7 @@ class ProcessEngine(object):
             if ret == 0:
                 print(colorama.Fore.LIGHTGREEN_EX + "\n\nAuthentication Successful -- Password Found\n\n")
                 print(colorama.Fore.LIGHTGREEN_EX + "---------------------------------------------------\n")
-                print(colorama.Fore.LIGHTGREEN_EX + "Username: {} Password: {}\n").format(self.username, password)
+                print(colorama.Fore.LIGHTGREEN_EX + "Username: {} Password: {}\n".format(self.username, password))
                 print(colorama.Fore.LIGHTGREEN_EX + "---------------------------------------------------\n")
                 sys.exit(0)
             if ret == 1:
