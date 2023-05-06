@@ -44,11 +44,11 @@ class ProcessEngine(object):
             pass
 
 def main():
+    colorama.just_fix_windows_console()
+    print(colorama.Fore.RED)
     fig = pyfiglet.Figlet(font='doom', width=100)
     print(fig.renderText('<*> BRUTUS <*>'))
     #Argument parser
-    colorama.just_fix_windows_console()
-    print(colorama.Fore.RED)
     prsr = argparse.ArgumentParser(description="SSH Bruteforcer by Barış Akyıldız",
                                    formatter_class= argparse.RawTextHelpFormatter)
     prsr.add_argument("-t", "--target", help="Target's IP address or URL", required=True)
@@ -56,6 +56,7 @@ def main():
     prsr.add_argument("-f", "--filename", help="Name of the file to use", required=True)
     prsr.add_argument("-u", "--username", help="Username to use to authenticate", required=True)
     args = prsr.parse_args()
+    print("Brutus started on target: {}:{}".format(args.target, args.port))
     print(colorama.Style.RESET_ALL)
 
     try:
