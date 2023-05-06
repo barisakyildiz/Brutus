@@ -31,7 +31,7 @@ class ProcessEngine(object):
                 print(colorama.Fore.LIGHTGREEN_EX + "---------------------------------------------------\n")
                 print(colorama.Fore.LIGHTGREEN_EX + "Username: {} Password: {}\n".format(self.username, password))
                 print(colorama.Fore.LIGHTGREEN_EX + "---------------------------------------------------\n")
-                sys.exit(0)
+                os.system("pkill -f 'SSH-Cracker.py'")
             if ret == 1:
                 print(colorama.Fore.YELLOW + "---------------------------------------------------\n")
                 print(colorama.Fore.YELLOW + "SSH Service not found on target\n")
