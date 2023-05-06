@@ -45,8 +45,7 @@ class ProcessEngine(object):
 
 def main():
     fig = pyfiglet.Figlet(font='doom', width=100)
-    print(fig.renderText('<*> BRUTUS <*>\n\
-                         --------------'))
+    print(fig.renderText('<*> BRUTUS <*>'))
     #Argument parser
     colorama.just_fix_windows_console()
     print(colorama.Fore.RED)
