@@ -16,10 +16,14 @@ SSH Brutus is a Python-based SSH brute force tool designed to test the security 
 ## Installation
 
 1. Clone this repository:
-   git clone https://github.com/your-username/ssh-brutus.git
-   cd ssh-brutus
-2. Install the required Python packages:
-   pip install paramiko colorama argparse pyfiglet
+   
+   **git clone https://github.com/barisakyildiz/Brutus.git**
+
+   **cd ssh-brutus**
+   
+3. Install the required Python packages:
+   
+   **pip install paramiko colorama argparse pyfiglet**
    
 ## Usage
 
