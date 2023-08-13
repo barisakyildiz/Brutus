@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/barisakyildiz/Brutus)
 ![GitHub Repo stars](https://img.shields.io/github/stars/barisakyildiz/Brutus?style=social)
-![GitHub last commit](https://img.shields.io/github/barisakyildiz/Brutus/ssh-brutus)
+![GitHub last commit](https://img.shields.io/github/barisakyildiz/Brutus/Brutus)
 
 SSH Brutus is a Python-based SSH brute force tool designed to test the security of SSH servers by attempting various passwords for a given username.
 
